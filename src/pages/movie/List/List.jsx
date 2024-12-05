@@ -30,11 +30,13 @@ const Lists = () => {
         .then(() => {
           setLists((prevLists) => prevLists.filter((movie) => movie.id !== id));
           alert('Movie deleted successfully!');
+    
         })
         .catch((error) => {
           console.error('Error deleting movie:', error);
           alert('Failed to delete the movie. Please try again.');
         });
+        
     }
   };
   

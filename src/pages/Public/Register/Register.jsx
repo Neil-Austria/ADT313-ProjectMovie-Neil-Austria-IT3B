@@ -37,7 +37,6 @@ function Register() {
         setStatus('success');
         alert('User registered successfully');
   
-        
         setTimeout(async () => {
           try {
             const res = await axios({
@@ -66,13 +65,20 @@ function Register() {
       alert('All fields are required!');
     }
   };
-  
+
+  // Handle Enter key press to trigger the register function
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent form submission on Enter key
+      handleRegister();
+    }
+  };
 
   return (
     <div className='Register'>
       <div className='main-container'>
         <h3>Sign Up</h3>
-        <form>
+        <form onKeyDown={handleKeyDown}>
           <div className='form-containerg'>
             <div className='form-group'>
               <label>Email:</label>
