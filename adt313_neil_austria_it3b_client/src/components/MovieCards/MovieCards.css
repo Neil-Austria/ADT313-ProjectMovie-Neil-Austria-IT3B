@@ -1,0 +1,42 @@
+.card {
+  max-width: 200px; 
+  border: 5px solid grey ; 
+  background: linear-gradient(145deg, #3f3f3f, #898989); 
+  border-radius: 15px; 
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s; 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
+  margin: 1rem; 
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto;
+  object-fit: contain; 
+  border-bottom: 3px solid #ff5722; 
+}
+
+.card:hover {
+  border-color: #ff5722;
+  background: linear-gradient(145deg, #2a2a2a, rgb(0, 0, 0) ); 
+  transform: translateY(-5px); 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.card .content {
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card .content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #ff7043;
+}
+
+.card .content p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
