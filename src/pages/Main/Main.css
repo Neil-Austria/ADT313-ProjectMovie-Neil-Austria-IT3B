@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +11,18 @@ body {
   color: #e0e0e0;
 }
 
-/* Main Container */
+
 .Main .container {
   display: flex;
   width: 100vw;
   min-height: 100vh;
 }
 
-/* Content Area */
+
 .Main .container .outlet {
   flex-grow: 3;
   padding: 2rem;
-  background-color: #1e1e1e;  /* Slightly lighter background */
+  background-color: #1e1e1e;  
   border-radius: 15px;
   margin-left: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -33,15 +33,15 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation Bar */
+
 .Main .container .navigation {
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 260px;  /* Fixed width for a more luxurious, spacious sidebar */
+  width: 260px;  
   background-color: #1c1c1c;
   color: #fcfcfc;
-  border-right: 2px solid #ff7043;  /* Gold-like border to emphasize luxury */
+  border-right: 2px solid #ff7043;  
   padding-top: 40px;
   z-index: 1000;
   transition: background-color 0.3s, box-shadow 0.3s ease;
@@ -49,10 +49,10 @@ body {
 }
 
 .Main .container .navigation:hover {
-  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.2);  /* Soft shadow effect on hover */
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.2);  
 }
 
-/* Navigation Menu */
+
 .Main .container .navigation ul {
   list-style: none;
   padding: 0;
@@ -67,8 +67,8 @@ body {
 
 .Main .container .navigation ul li.active,
 .Main .container .navigation ul li:hover {
-  background: linear-gradient(45deg, #ac1b1b, #ff7043);  /* Luxurious gradient hover effect */
-  transform: translateX(10px);  /* Smooth right movement on hover */
+  background: linear-gradient(45deg, #ac1b1b, #ff7043);  
+  transform: translateX(10px);  
   border-radius: 10px;
 }
 
@@ -83,21 +83,21 @@ body {
 }
 
 .Main .container .navigation ul li a:hover {
-  color: #ff7043;  /* Gold color on hover */
+  color: #ff7043;  
 }
 
-/* Logout Button */
+
 .Main .container .navigation ul li.logout {
   cursor: pointer;
   margin-top: auto;
   padding: 20px 20px 10px;
-  background-color: #1c1c1c;  /* Rich red for logout button */
+  background-color: #1c1c1c;  
   border-radius: 10px;
   text-align: center;
 }
 
 .Main .container .navigation ul li.logout:hover {
-  background-color: #b71c1c;  /* Darker red on hover */
+  background-color: #b71c1c;  
 }
 
 .Main .container .navigation ul li.logout a {
